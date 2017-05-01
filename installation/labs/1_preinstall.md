@@ -4,12 +4,12 @@
     sudo su root
     sudo echo 1 > /proc/sys/vm/swappiness```
 
-   ## Mount Attributes of Volumes:
+## Mount Attributes of Volumes:
 ```used df -k and lsblk to output physical volumes attributes``` 
 
 
 
 
-   ## Network Interface Configuration:
+## Network Interface Configuration:
 ```used ifconfig command to list network configuration. 
    Attached the screenshot as well.```
