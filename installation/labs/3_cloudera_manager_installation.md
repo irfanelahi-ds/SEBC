@@ -31,7 +31,7 @@ reboot
 This still did not fix the error. Parsed the logs again and found that JAVA_HOME wasn't initialized. Opened the following file and added JAVA_HOME to it.
 ```
 sudo vi /etc/default/cloudera-scm-server
-export JAVA_HOME=/opt/jdk1.8.0_121
+export JAVA_HOME=/usr/java/jdk1.7.0_80
 ```
 Also exported JAVA_HOME environment variable.
 MariaDB was not set to start on reboot so there was still an error in starting Cloudera Manager. Also set JAVA_HOME again
@@ -91,6 +91,7 @@ sudo vi /etc/environment
 JAVA_HOME=/usr/java/jdk.1.7.0_80
 JRE_HOME=/usr/java/jdk.1.7.0_80/jre
 PATH=$PATH:/usr/java/jdk.1.7.0_80/bin:/usr/java/jdk.1.7.0_80/jre/bin:/bin
+^^in many cases when you un tar using tar xzvf jdk__.tar -C /usr/java it generates jdk1.7.0_80 NOT jdk.1.7.0 (as written in Cloudera Manager documentation so beware of this pitfall)
 ```
 
 Recommendation: manually install the same and compliant JDK to all the nodes in a cluster instead of having CM install it for you so that all versions are the same.
