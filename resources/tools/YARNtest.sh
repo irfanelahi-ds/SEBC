@@ -11,7 +11,7 @@ echo Testing loop started on `date`
 for i in {1..8..4}    
 do
    # Reducer containers
-   for j in 1 
+   for j in {1..2} 
    do                 
       # Container memory
       for k in {512..1024..128} 
@@ -31,7 +31,8 @@ do
                      -Dmapreduce.map.memory.mb=$k \
                      -Dmapreduce.map.java.opts.max.heap=$MAP_MB \
                      -Dmapreduce.reduce.java.opts.max.heap=$RED_MB \
-                     51200000 /results/tg-10GB-${i}-${j}-${k} 1>tera_${i}_${j}_${k}.out 2>tera_${i}_${j}_${k}.err                       
+                     51200000 /results/tg-10GB-${i}-${j}-${k} 1>tera_${i}_${j}_${k}.out 2>tera_${i}_${j}_${k}.err
+                                            
 
        time ${HADOOP}/hadoop jar $MR/hadoop-examples.jar terasort \
                      -Dmapreduce.job.maps=$i \
