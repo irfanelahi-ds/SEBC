@@ -43,6 +43,7 @@ Mounted the volumes using the following steps:
 	The currently active option is in brackets. In my case, its [always].
 	To change it to never:
 	echo never >/sys/kernel/mm/transparent_hugepage/enabled
+	echo never > /sys/kernel/mm/transparent_hugepage/defrag
 ```
 
 ## Network Interface Configuration:
