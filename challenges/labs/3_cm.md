@@ -16,6 +16,8 @@ drwxrwxr-x   - oozie  oozie               0 2017-05-04 21:27 /user/oozie
 curl -X GET -u "admin:admin" -i http://ec2-13-54-76-174.ap-southeast-2.compute.amazonaws.com:7180/api/v14/hosts 
 
 output:
+
+```
 ```
 [root@ip-172-31-7-102 ec2-user]#  curl -X GET -u "admin:admin" -i http://ec2-13-54-76-174.ap-southeast-2.compute.amazonaws.com:7180/api/v14/hosts
 HTTP/1.1 200 OK
@@ -272,7 +274,5 @@ Server: Jetty(6.1.26.cloudera.4)
     "maintenanceOwners" : [ ],
     "displayName" : "HDFS"
   } ]
-
-
 
   ```
