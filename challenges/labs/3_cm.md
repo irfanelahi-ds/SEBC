@@ -93,12 +93,12 @@ Server: Jetty(6.1.26.cloudera.4)
 ## API call for Services:
 
 ```
-[root@ip-172-31-7-102 ec2-user]#  curl -X GET -u "admin:admin" -i http://ec2-13-54-76-174.ap-southeast-2.compute.amazonaws.com:7180/api/v6/clusters/irfanelahi-ds/services
+[root@ip-172-31-7-102 ec2-user]# curl -X GET -u "admin:admin" -i http://ec2-13-54-76-174.ap-southeast-2.compute.amazonaws.com:7180/api/v6/clusters/irfanelahi-ds/services
 HTTP/1.1 200 OK
 Expires: Thu, 01-Jan-1970 00:00:00 GMT
-Set-Cookie: CLOUDERA_MANAGER_SESSIONID=1lziyys2y8crl64wh43iefkq9;Path=/;HttpOnly
+Set-Cookie: CLOUDERA_MANAGER_SESSIONID=sa54npmbzcqq8yuejg7dgp6a;Path=/;HttpOnly
 Content-Type: application/json
-Date: Fri, 05 May 2017 01:36:47 GMT
+Date: Fri, 05 May 2017 02:10:19 GMT
 Transfer-Encoding: chunked
 Server: Jetty(6.1.26.cloudera.4)
 
@@ -111,13 +111,13 @@ Server: Jetty(6.1.26.cloudera.4)
     },
     "serviceUrl" : "http://ec2-13-54-76-174.ap-southeast-2.compute.amazonaws.com:7180/cmf/serviceRedirect/hive",
     "serviceState" : "STARTED",
-    "healthSummary" : "BAD",
+    "healthSummary" : "GOOD",
     "healthChecks" : [ {
       "name" : "HIVE_HIVEMETASTORES_HEALTHY",
-      "summary" : "BAD"
+      "summary" : "GOOD"
     }, {
       "name" : "HIVE_HIVESERVER2S_HEALTHY",
-      "summary" : "BAD"
+      "summary" : "GOOD"
     } ],
     "configStalenessStatus" : "FRESH",
     "clientConfigStalenessStatus" : "FRESH",
@@ -132,13 +132,13 @@ Server: Jetty(6.1.26.cloudera.4)
     },
     "serviceUrl" : "http://ec2-13-54-76-174.ap-southeast-2.compute.amazonaws.com:7180/cmf/serviceRedirect/zookeeper",
     "serviceState" : "STARTED",
-    "healthSummary" : "BAD",
+    "healthSummary" : "GOOD",
     "healthChecks" : [ {
       "name" : "ZOOKEEPER_CANARY_HEALTH",
       "summary" : "GOOD"
     }, {
       "name" : "ZOOKEEPER_SERVERS_HEALTHY",
-      "summary" : "BAD"
+      "summary" : "GOOD"
     } ],
     "configStalenessStatus" : "FRESH",
     "clientConfigStalenessStatus" : "FRESH",
@@ -153,10 +153,10 @@ Server: Jetty(6.1.26.cloudera.4)
     },
     "serviceUrl" : "http://ec2-13-54-76-174.ap-southeast-2.compute.amazonaws.com:7180/cmf/serviceRedirect/hue",
     "serviceState" : "STARTED",
-    "healthSummary" : "BAD",
+    "healthSummary" : "GOOD",
     "healthChecks" : [ {
       "name" : "HUE_HUE_SERVERS_HEALTHY",
-      "summary" : "BAD"
+      "summary" : "GOOD"
     } ],
     "configStalenessStatus" : "FRESH",
     "clientConfigStalenessStatus" : "FRESH",
@@ -171,10 +171,10 @@ Server: Jetty(6.1.26.cloudera.4)
     },
     "serviceUrl" : "http://ec2-13-54-76-174.ap-southeast-2.compute.amazonaws.com:7180/cmf/serviceRedirect/oozie",
     "serviceState" : "STARTED",
-    "healthSummary" : "BAD",
+    "healthSummary" : "GOOD",
     "healthChecks" : [ {
       "name" : "OOZIE_OOZIE_SERVERS_HEALTHY",
-      "summary" : "BAD"
+      "summary" : "GOOD"
     } ],
     "configStalenessStatus" : "FRESH",
     "clientConfigStalenessStatus" : "FRESH",
@@ -195,13 +195,13 @@ Server: Jetty(6.1.26.cloudera.4)
       "summary" : "DISABLED"
     }, {
       "name" : "IMPALA_CATALOGSERVER_HEALTH",
-      "summary" : "BAD"
+      "summary" : "GOOD"
     }, {
       "name" : "IMPALA_IMPALADS_HEALTHY",
-      "summary" : "BAD"
+      "summary" : "GOOD"
     }, {
       "name" : "IMPALA_STATESTORE_HEALTH",
-      "summary" : "BAD"
+      "summary" : "GOOD"
     } ],
     "configStalenessStatus" : "FRESH",
     "clientConfigStalenessStatus" : "FRESH",
@@ -216,16 +216,16 @@ Server: Jetty(6.1.26.cloudera.4)
     },
     "serviceUrl" : "http://ec2-13-54-76-174.ap-southeast-2.compute.amazonaws.com:7180/cmf/serviceRedirect/yarn",
     "serviceState" : "STARTED",
-    "healthSummary" : "BAD",
+    "healthSummary" : "GOOD",
     "healthChecks" : [ {
       "name" : "YARN_JOBHISTORY_HEALTH",
-      "summary" : "BAD"
+      "summary" : "GOOD"
     }, {
       "name" : "YARN_NODE_MANAGERS_HEALTHY",
-      "summary" : "BAD"
+      "summary" : "GOOD"
     }, {
       "name" : "YARN_RESOURCEMANAGERS_HEALTH",
-      "summary" : "BAD"
+      "summary" : "GOOD"
     }, {
       "name" : "YARN_USAGE_AGGREGATION_HEALTH",
       "summary" : "DISABLED"
@@ -243,7 +243,7 @@ Server: Jetty(6.1.26.cloudera.4)
     },
     "serviceUrl" : "http://ec2-13-54-76-174.ap-southeast-2.compute.amazonaws.com:7180/cmf/serviceRedirect/hdfs",
     "serviceState" : "STARTED",
-    "healthSummary" : "BAD",
+    "healthSummary" : "GOOD",
     "healthChecks" : [ {
       "name" : "HDFS_BLOCKS_WITH_CORRUPT_REPLICAS",
       "summary" : "GOOD"
@@ -252,13 +252,13 @@ Server: Jetty(6.1.26.cloudera.4)
       "summary" : "GOOD"
     }, {
       "name" : "HDFS_DATA_NODES_HEALTHY",
-      "summary" : "BAD"
+      "summary" : "GOOD"
     }, {
       "name" : "HDFS_FREE_SPACE_REMAINING",
       "summary" : "GOOD"
     }, {
       "name" : "HDFS_HA_NAMENODE_HEALTH",
-      "summary" : "BAD"
+      "summary" : "GOOD"
     }, {
       "name" : "HDFS_MISSING_BLOCKS",
       "summary" : "GOOD"
@@ -272,6 +272,7 @@ Server: Jetty(6.1.26.cloudera.4)
     "maintenanceOwners" : [ ],
     "displayName" : "HDFS"
   } ]
+
 
 
   ```
