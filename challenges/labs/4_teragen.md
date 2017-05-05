@@ -106,7 +106,7 @@ sys     0m0.308s
 ## output of hdfs dfs -ls command:
 
 ```
-
+```
 [cate@ip-172-31-7-102 ec2-user]$ hadoop fs -ls /user/cate/tgen
 Found 9 items
 -rw-r--r--   3 cate supergroup          0 2017-05-04 22:00 /user/cate/tgen/_SUCCESS
