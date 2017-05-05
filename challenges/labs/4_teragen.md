@@ -97,10 +97,11 @@
 
 ## time command output:
 ```
+```
 real    1m31.093s
 user    0m6.471s
 sys     0m0.308s
-
+```
 ```
 
 ## output of hdfs dfs -ls command:
